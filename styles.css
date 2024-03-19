@@ -7,29 +7,122 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 70px;
     color: rgb(24, 15, 15);
+    background-color: transparent
 }
 
-.menus
- { display:flex;
-  flex-direction: row;}
+.navbar .logo{
+    color: #ffa23f;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.navbar .logo span{
+    color: #3259fa;
+}
+
+.navbar .menus ul
+ { 
+    display:flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.navbar .menus ul li{
+    list-style-type: none;
+}
+
+.navbar .menus ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .right-section{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.navbar .right-section .form-control{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 9px;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar .right-section .form-control input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.navbar .right-section .form-control:focus{
+    outline: none;
+    border: none;
+}
+
+.navbar .right-section .cart{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 9px;
+    width: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar .right-section .cart i{
+    color: #3259fa;
+    font-weight: bold;
+}
+
+.navbar .right-section .profile img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 100px;
+}
 
 
+/* Hero */
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 50px;
-    background-color: #f4f4f4;
+    padding: 80px;
 }
 
-.hero-content {
-    flex: 1;
+.hero-content h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.hero-image img {
-    max-width: 100%;
+.hero-content h1 span{
+    color: #ffa23f;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.hero-content button{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border-radius: 30px;
+    padding: 17px 40px;
+    font-size: 19px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer
 }
 
 .service-overview {
