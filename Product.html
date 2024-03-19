@@ -5,42 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thala 7 Sneaker Store - Product Display Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Thala 7 Sneaker Store</div>
-            <div class="menus">Menus</div>
-            <div class="icons">
-                <img src="search-icon.png" alt="Search">
-                <img src="cart-icon.png" alt="Cart">
-                <img src="profile-pic.png" alt="Profile">
+            <div class="logo">Thala<span> 7.</span></div>
+            <div class="menus">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Brands <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="">More <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <div class="form-control">
+                    <i class="ri-search-2-line"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="cart">
+                    <i class="ri-briefcase-line"></i>
+                    <span>0</span>
+                </div>
+                <div class="profile">
+                    <img src="./assets/Profile.jpg" alt="Profile">
+                </div>
             </div>
         </nav>
     </header>
-    <section class="main-display">
-        <div class="product-image">
-            <img src="sneaker-main-image.jpg" alt="Sneaker">
+
+    <section class="p-main-display">
+        <div class="product-image" style="width: 60%;">
+            <img src="assets/Products/3.jpeg" alt="Sneaker"
+              style="width: 80%;">
         </div>
-        <div class="product-details">
-            <h2>Sneaker Name</h2>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="product-details" style="width: 40%;
+         ">
+            <h1 style="font-size:xx-large;">Sneaker Name</h1>
+            <p style="font-size: small;
+            color: gray;">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Price: $99.99</p>
             <p>Sale Details: 20% off</p>
             <div class="quantity-section">
                 <label for="quantity">Quantity:</label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
             </div>
-            <button class="add-to-cart-btn">Add to Cart</button>
+            
+            <button><a href="ShoppingCart.html">Add to Cart </a></button>
         </div>
     </section>
-    <section class="bottom-gallery">
-        <h2>More Images</h2>
-        <div class="image-gallery">
-            <img src="sneaker-image1.jpg" alt="Sneaker 1">
-            <img src="sneaker-image2.jpg" alt="Sneaker 2">
-            <img src="sneaker-image3.jpg" alt="Sneaker 3">
-            <!-- Add more images as needed -->
+
+
+    <section class="bottom-gallery"
+    >
+        <h2 style="display: flex;
+        flex-direction: row;
+        margin: 0 10%;">More Images</h2>
+        <div class="image-gallery"
+        style="display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+      align-items: center;
+      ">
+            <img src="assets/Products/1.jpeg" alt="Sneaker"
+            style="width: 20%;">
+            
+            <img src="assets/Products/2.jpeg" alt="Sneaker"
+            style="width: 20%;">
+            
+            <img src="assets/Products/3.jpeg" alt="Sneaker"
+            style="width: 20%;">
         </div>
     </section>
 </body>

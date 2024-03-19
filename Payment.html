@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thala 7 Sneaker Store - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your_kit_code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="your-logo.png" alt="Thala 7 Sneaker Store">
+      </div>
+      <ul class="menu-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+      <div class="icons">
+        <img src="search-icon.png" alt="Search">
+        <img src="cart-icon.png" alt="Cart">
+        <img src="profile-pic.png" alt="Profile">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-container">
+      <div class="checkout-left">
+        <h3>Checkout</h3>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" placeholder="Enter your email address">
+        <div class="payment-card">
+          <h4>Payment Method</h4>
+          <ul class="payment-options">
+            <li class="active">Pay via Cards</li>
+            <li>Crypto</li>
+            <li>Bank</li>
+          </ul>
+          <div class="card-details" style="display: block;"> <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="Enter card number">
+            <div class="card-info">
+              <label for="expiry">Expiry:</label>
+              <input type="text" id="expiry" placeholder="MM/YY">
+              <label for="cvv">CVV:</label>
+              <input type="password" id="cvv" placeholder="Enter CVV">
+            </div>
+            <label for="country">Country:</label>
+            <select id="country">
+              <option value="">Select Country</option>
+              </select>
+            <label for="zip-code">Zip Code:</label>
+            <input type="text" id="zip-code" placeholder="Enter zip code">
+          </div>
+          <div class="crypto-details" style="display: none;"> </div>
+          <div class="bank-details" style="display: none;"> </div>
+        </div>
+      </div>
+
+      <div class="checkout-right">
+        <h2>Order Summary</h2>
+        <div class="coupon-card">
+          <h4>Apply Coupon</h4>
+          <input type="text" placeholder="Enter Coupon Code">
+          <button class="apply-coupon-btn">Apply Coupon</button>
+        </div>
+        <div class="cart-summary">
+          <p>Subtotal: $<span id="subtotal">129.99</span></p>
+          <p>Taxes: $<span id="taxes">0.00</span></p>
+          <p>Discount: $<span id="discount">0.00</span></p>
+          <hr>
+          <p>Total: $<span id="total">129.99</span></p>
+          <button class="pay-now-btn">Pay Now</button>
+          <i class="fab fa-razorpay"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

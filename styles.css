@@ -1,15 +1,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    width: auto;
 }
 
 .navbar {
     display: flex;
+    width: auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px 70px;
-    color: rgb(24, 15, 15);
-    background-color: transparent
+    background-color: transparent;
 }
 
 .navbar .logo{
@@ -26,11 +27,15 @@ body {
  { 
     display:flex;
     align-items: center;
-    gap: 17px;
+    gap: 30px;
+    
+    
 }
 
 .navbar .menus ul li{
     list-style-type: none;
+    
+    
 }
 
 .navbar .menus ul li a{
@@ -126,13 +131,27 @@ body {
 }
 
 .service-overview {
-    background-color: #dac912;
-    color: rgb(16, 6, 6);
+    background-color:#FF8807;
     padding: 20px;
     text-align: center;
+    height: 100%;
 }
 
 .achievements {
     display: flex;
+    color: #FFF0E0;
+         font-size:x-large;
+         text-align: center;
+         display: flex;
     justify-content: space-around;
+}
+
+/*Product*/
+.p-main-display
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding: 80px;
 }
