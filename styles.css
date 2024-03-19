@@ -1,16 +1,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    width: auto;
+}
+
+header{
+    background-image: url(./assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar {
     display: flex;
-    width: auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px 70px;
-    background-color: transparent;
+    color: rgb(24, 15, 15);
+    background-color: transparent
 }
 
 .navbar .logo{
@@ -27,15 +32,11 @@ body {
  { 
     display:flex;
     align-items: center;
-    gap: 30px;
-    
-    
+    gap: 17px;
 }
 
 .navbar .menus ul li{
     list-style-type: none;
-    
-    
 }
 
 .navbar .menus ul li a{
@@ -76,6 +77,7 @@ body {
     padding: 5px;
     border-radius: 9px;
     width: 40px;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -92,6 +94,7 @@ body {
     height: 35px;
     object-fit: cover;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 
@@ -119,39 +122,56 @@ body {
     padding: 0;
 }
 
-.hero-content button{
+.hero-content a{
+    display: inline-block;
+    text-decoration: none;
     background-color: rgb(25, 25, 25);
     color: white;
     border-radius: 30px;
     padding: 17px 40px;
     font-size: 19px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     cursor: pointer
 }
 
 .service-overview {
-    background-color:#FF8807;
-    padding: 20px;
+    background-color: #ffa23f;
+    color: rgb(16, 6, 6);
+    padding: 35px 20px;
     text-align: center;
-    height: 100%;
 }
 
 .achievements {
     display: flex;
-    color: #FFF0E0;
-         font-size:x-large;
-         text-align: center;
-         display: flex;
-    justify-content: space-around;
-}
-
-/*Product*/
-.p-main-display
-{
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    width: auto;
-    padding: 80px;
+    gap: 20px;
+}
+
+.achievements div{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 25px;
+}
+
+.achievements div i{
+    font-size: 47px;
+    font-weight: normal;
+}
+
+.achievements div p{
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.achievements div p span{
+    font-weight: bolder;
+    text-align: left;
+    font-size: 35px;
 }
