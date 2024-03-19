@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thala 7 Sneaker Store - Shopping Cart</title>
+  <link rel="stylesheet" href="./Cart.css">
   <link rel="stylesheet" href="styles.css">
   <link
   href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
@@ -12,31 +13,31 @@
 </head>
 <body>
     <header>
-      <nav class="navbar">
-        <div class="logo">Thala<span> 7.</span></div>
-        <div class="menus">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Brands <i class="ri-arrow-down-s-line"></i></a></li>
-                <li><a href="">More <i class="ri-arrow-down-s-line"></i></a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-        <div class="right-section">
-            <div class="form-control">
-                <i class="ri-search-2-line"></i>
-                <input type="text" placeholder="Search"/>
+        <nav class="navbar">
+            <div class="logo">Thala<span> 7.</span></div>
+            <div class="menus">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Brands <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="">More <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
-            <div class="cart">
-                <i class="ri-briefcase-line"></i>
-                <span>0</span>
+            <div class="right-section">
+                <div class="form-control">
+                    <i class="ri-search-2-line"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <div class="cart">
+                    <i class="ri-briefcase-line"></i>
+                    <span>0</span>
+                </div>
+                <div class="profile">
+                    <img src="./assets/Profile.jpg" alt="Profile">
+                </div>
             </div>
-            <div class="profile">
-                <img src="./assets/Profile.jpg" alt="Profile">
-            </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
 
@@ -55,29 +56,45 @@
           </thead>
           <tbody>
             <tr>
-              <td>Thala 7 Special Edition</td>
+              <td>Seven By M.S Dhoni W...</td>
               <td>1</td>
-              <td>$129.99</td>
-              <td><i class="fas fa-times-circle"></i></td>  </tr>
+              <td>₹4999</td>
+              <td><i class="ri-close-line"></i></td>  
+            </tr>
+            <tr>
+              <td>Seven By M.S Dhoni W...</td>
+              <td>1</td>
+              <td>₹4999</td>
+              <td><i class="ri-close-line"></i></td>  
+            </tr>
+            <tr>
+              <td>Seven By M.S Dhoni W...</td>
+              <td>1</td>
+              <td>₹4999</td>
+              <td><i class="ri-close-line"></i></td>  
+            </tr>
             </tbody>
         </table>
-        <a href="#" class="continue-shopping-btn">Continue Shopping</a>
+        <a href="#"><i class="ri-arrow-left-s-line"></i> Continue Shopping</a>
       </div>
 
       <div class="cart-right">
-        <div class="coupon-card">
-          <h4>Apply Coupon</h4>
-          <input type="text" placeholder="Enter Coupon Code">
-          <button class="apply-coupon-btn">Apply Coupon</button>
+        <div class="wrapper">
+          <div class="coupon-card">
+            <h4>Apply Coupon</h4>
+            <input type="text" placeholder="Enter Coupon Code">
+            <button class="apply-coupon-btn">Apply Coupon</button>
+          </div>
+          <div class="cart-summary">
+            <p>Subtotal: $<span id="subtotal">129.99</span></p>
+            <p>Taxes: $<span id="taxes">0.00</span></p>
+            <p>Discount: $<span id="discount">0.00</span></p>
+            <hr>
+            <p>Total: $<span id="total">129.99</span></p>
+            <button class="pay-now-btn"><a href="Payment.html">Pay Now</a></button>
+            <i class="fab fa-razorpay"></i> 
+          </div>
         </div>
-        <div class="cart-summary">
-          <p>Subtotal: $<span id="subtotal">129.99</span></p>
-          <p>Taxes: $<span id="taxes">0.00</span></p>
-          <p>Discount: $<span id="discount">0.00</span></p>
-          <hr>
-          <p>Total: $<span id="total">129.99</span></p>
-          <button class="pay-now-btn"><a href="Payment.html">Pay Now</a></button>
-          <i class="fab fa-razorpay"></i> </div>
       </div>
     </section>
   </main>
