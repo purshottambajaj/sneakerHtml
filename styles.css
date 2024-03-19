@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(24, 15, 15);
+}
+
+.menus
+ { display:flex;
+  flex-direction: row;}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.service-overview {
+    background-color: #dac912;
+    color: rgb(16, 6, 6);
+    padding: 20px;
+    text-align: center;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-around;
+}
