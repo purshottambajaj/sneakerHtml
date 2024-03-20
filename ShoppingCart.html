@@ -17,9 +17,9 @@
             <div class="logo">Thala<span> 7.</span></div>
             <div class="menus">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Brands <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="./Product.html">Brands <i class="ri-arrow-down-s-line"></i></a></li>
                     <li><a href="">More <i class="ri-arrow-down-s-line"></i></a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -75,26 +75,30 @@
             </tr>
             </tbody>
         </table>
-        <a href="#"><i class="ri-arrow-left-s-line"></i> Continue Shopping</a>
+        <a href="./Product.html"><i class="ri-arrow-left-s-line"></i> Continue Shopping</a>
       </div>
 
       <div class="cart-right">
         <div class="wrapper">
           <div class="coupon-card">
-            <h4>Apply Coupon</h4>
-            <input type="text" placeholder="Enter Coupon Code">
-            <button class="apply-coupon-btn">Apply Coupon</button>
+            <h5>Enter Coupon Code</h5>
+            <div class='form-control'>
+              <input type="text" placeholder="Coupon Code">
+              <button>Apply Coupon</button>
+            </div>
           </div>
+          
           <div class="cart-summary">
-            <p>Subtotal: $<span id="subtotal">129.99</span></p>
-            <p>Taxes: $<span id="taxes">0.00</span></p>
-            <p>Discount: $<span id="discount">0.00</span></p>
-            <hr>
-            <p>Total: $<span id="total">129.99</span></p>
-            <button class="pay-now-btn"><a href="Payment.html">Pay Now</a></button>
-            <i class="fab fa-razorpay"></i> 
+            <p>Subtotal: <span id="subtotal">₹129.99</span></p>
+            <p>Taxes: $<span id="taxes">₹0.00</span></p>
+            <p>Discount: $<span id="discount">₹0.00</span></p>
+            <p>Total: $<span id="total">₹129.99</span></p>
           </div>
         </div>
+        <button class="pay-now-btn">
+          <a href="Payment.html">Pay Now</a>
+        </button>
+        <img src='./assets/Secure-Payment.png' alt="Payment"/>
       </div>
     </section>
   </main>

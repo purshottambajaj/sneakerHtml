@@ -9,17 +9,20 @@
   <link rel="stylesheet" href="styles.css">
   <title>Thala 7 Sneaker Store - Checkout</title>
   <style>
-   
-
-   .checkout-container{
-    display: flex;
-    flex-direction: row;
-    font-size: larger;
-    min-height: auto;
-    background-color: #fff;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+    main section {
+        margin: 85px 60px;
+    }
+    .head {
+        color: gray;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 0px 150px;
+    }
+    .checkout-container {
+        /* padding: 40px; */
+        display: flex;
+        border-radius: 10px;
+    }
 
     .checkout-left , .checkout-right
     {width: 40%; padding: 2% 10%;}
@@ -28,9 +31,11 @@
     {display: flex;
         flex-direction:column;}
 
-   .head
-   {display: flex;
-     margin: 0 5%;color: lightslategray;}
+   .head{
+     color: gray;
+     font-size: 18px;
+     font-weight: bold;
+   }
 
    .cart-summary .items {
   display: flex;
@@ -68,7 +73,8 @@
       
      border: none;
      cursor: pointer;
-    color: white;}
+    color: white;
+    }
   </style>
 </head>
 <body>
@@ -79,9 +85,9 @@
       <div class="logo">Thala<span> 7.</span></div>
       <div class="menus">
           <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Brands <i class="ri-arrow-down-s-line"></i></a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="./Product.html">Brands <i class="ri-arrow-down-s-line"></i></a></li>
               <li><a href="">More <i class="ri-arrow-down-s-line"></i></a></li>
               <li><a href="">Contact</a></li>
           </ul>
@@ -101,198 +107,195 @@
       </div>
   </nav>
   </header>
-
-    <h3 class="head" >Checkout</h3>
-
   <main>
-     <section class="checkout-container" >
-       
-        <div class="checkout-left" >
-        <div class="contact" > 
-            <h3>Contact Details</h3>
-           <label for="email">Email ID:</label>
-           <input type="email" id="email"
-            placeholder="email address" 
-            style="width: calc(100% - 100px);
-             padding: 8px;
-             border: none;
-             border-radius: 5px;
-            
-            ;">
-         </div> 
+     <section class="">
+       <h3 class="head">Checkout</h3>
+       <div class='checkout-container'>
+                  <div class="checkout-left" >
+                    <div class="contact" > 
+                        <h3>Contact Details</h3>
+                       <label for="email">Email ID:</label>
+                       <input type="email" id="email"
+                        placeholder="email address" 
+                        style="width: calc(100% - 100px);
+                         padding: 8px;
+                         border: none;
+                         border-radius: 5px;
 
-        <div class="payment-card">
-          <h4>Payment Method</h4>
-          <ul class="payment-options" style="  list-style: none;
-          padding: 0;
-          display: flex;
-          justify-content: space-around;
-        ">
-            <div style="width: 80px;
-            height: 60px;
-            padding-left: 15px;
-            border: #FFA239 solid 1px;
-            border-radius: 5px;
-            display: flex; 
-            flex-direction:column ;
-            justify-content: center;
-            align-items: start;
-            color: #FFA239;
-            ">
-            <i class="ri-bank-card-line"></i>
-             <li class="active" >Cards</li></div>
-             <div style="
-            display: flex; 
-            flex-direction:column ;
-            justify-content: center;
-            align-items: start;
-            color: lightslategrey;
-            "> <i class="fa-brands fa-btc"></i>
-             <li>Crypto</li>
-             </div><div style="
-             display: flex; 
-             flex-direction:column ;
-             justify-content: center;
-             align-items: start;
-             color: lightslategrey;
-             ">
-             <i class="ri-bank-line"></i>
-             <li>Bank</li>
-             </div>
-          </ul>
-        </div>
-        
-          <div >
-           <label for="card-number">Card Number</label>
-           <input type="text" id="card-number" placeholder="card number"
-            style="width: calc(100% - 100px);
-             padding: 8px;
-             border: none;
-             border-radius: 5px;
-             ;">
-          </div> 
+                        ;">
+                     </div> 
 
-          <div 
-          style="display: flex;
-          flex-direction: row;
-          justify-content: start;
-          gap:30%;">
-            <div ><label for="expiry">Expiry</label></div>
-             <div><label for="cvv">CVV</label></div>
-          </div>    
-        
-          <div  style="width: calc(100% - 50px);
-          display: flex;
-          flex-direction: row;
-          padding: 8px 0;
-          border-radius: 5px;">
+                    <div class="payment-card">
+                      <h4>Payment Method</h4>
+                      <ul class="payment-options" style="  list-style: none;
+                      padding: 0;
+                      display: flex;
+                      justify-content: space-around;
+                    ">
+                        <div style="width: 80px;
+                        height: 60px;
+                        padding-left: 15px;
+                        border: #FFA239 solid 1px;
+                        border-radius: 5px;
+                        display: flex; 
+                        flex-direction:column ;
+                        justify-content: center;
+                        align-items: start;
+                        color: #FFA239;
+                        ">
+                        <i class="ri-bank-card-line"></i>
+                         <li class="active" >Cards</li></div>
+                         <div style="
+                        display: flex; 
+                        flex-direction:column ;
+                        justify-content: center;
+                        align-items: start;
+                        color: lightslategrey;
+                        "> <i class="fa-brands fa-btc"></i>
+                         <li>Crypto</li>
+                         </div><div style="
+                         display: flex; 
+                         flex-direction:column ;
+                         justify-content: center;
+                         align-items: start;
+                         color: lightslategrey;
+                         ">
+                         <i class="ri-bank-line"></i>
+                         <li>Bank</li>
+                         </div>
+                      </ul>
+                    </div>
 
-          <input type="text" id="expiry" placeholder="MM/YY" 
-           style="width: calc(100% - 100px);
-            padding: 8px;
-            border: none;
-            border-radius: 5px;
-            ;">
-            <input type="password" id="cvv" placeholder="Enter CVV"
-            style="width: calc(100% - 100px);
-            padding: 8px;
-            border: none;
-            border-radius: 5px;
-            ;">
-        
-          </div> 
+                      <div >
+                       <label for="card-number">Card Number</label>
+                       <input type="text" id="card-number" placeholder="card number"
+                        style="width: calc(100% - 100px);
+                         padding: 8px;
+                         border: none;
+                         border-radius: 5px;
+                         ;">
+                      </div> 
 
-          <div style="display: flex;
-          flex-direction: row;
-          justify-content: start;
-          gap:30%;">
-            <label for="country"   >Country:</label>
-            <label for="zip-code" >Zip Code:</label>
-          </div>
-            
-          <div  style="width: calc(100% - 50px);
-          display: flex;
-          flex-direction: row;
-          padding: 8px 0;
-          border-radius: 5px;"
-          >
-            <select id="country">
-              <option value="" style="width: calc(100% - 100px);
-              padding: 8px;
-              border: none;
-              border-radius: 5px;
-              ;">Select Country</option>
-              </select>
-            
-            <input type="text" style="width: calc(100% - 100px);
-            padding: 8px;
-            border: none;
-            border-radius: 5px;
-            ;" id="zip-code" placeholder="Enter zip code">
-        </div>
-    </div>
+                      <div 
+                      style="display: flex;
+                      flex-direction: row;
+                      justify-content: start;
+                      gap:30%;">
+                        <div ><label for="expiry">Expiry</label></div>
+                         <div><label for="cvv">CVV</label></div>
+                      </div>    
 
+                      <div  style="width: calc(100% - 50px);
+                      display: flex;
+                      flex-direction: row;
+                      padding: 8px 0;
+                      border-radius: 5px;">
 
-      <div class="checkout-right" style="width: 40%; padding: 2% 10%;">
-        <h2 style="display: flex;
-         justify-content: center; align-items: center;">Order Summary</h2>
+                      <input type="text" id="expiry" placeholder="MM/YY" 
+                       style="width: calc(100% - 100px);
+                        padding: 8px;
+                        border: none;
+                        border-radius: 5px;
+                        ;">
+                        <input type="password" id="cvv" placeholder="Enter CVV"
+                        style="width: calc(100% - 100px);
+                        padding: 8px;
+                        border: none;
+                        border-radius: 5px;
+                        ;">
 
-           <div style="display: flexbox;
-           height: 20%;
-           ">
-            <div>   <input type="text" placeholder="Coupon Code" style="
-              width: calc(100% - 100px);
-               padding: 8px;
-               margin-bottom: 10px;
-               border: 1px solid #ccc;
-              border-radius: 5px;
-                      ">
-            </div>    
-             <div
-          style="display: flex;
-         flex-direction: row;
-         justify-content: center;  
-         align-items: center;
-         float: right;
-         width: 40%;
-         height: 50%;
-         background-color: #2378FF;
-         border-radius: 10%;
-         ">
-         <button class="apply-coupon-btn" style="background-color: #2378FF;
-         color: white;
-         border:none
-         ">Apply Coupon</button>
-             </div>
-            </div>
-       
+                      </div> 
 
-        <div class="cart-summary">
-          
-          <div class="items"> 
-            <div class="item1">Subtotal:</div>
-            <div class="item2"><span>4,700</span></div>
-          </div>
-           
-          <div class="items"> 
-            <div class="item1">Taxes:</div>
-            <div class="item2"><span >199</span></div>
-           </div>
-           <div class="items"> 
-             <div class="item1">Discount:</div>
-             <div class="item2"><span >0</span></div>
-           </div>  
-          
-           <div class="items"> 
-              <div class="item1">Total: </div>
-              <div class="item2"><span >4,999</span></div>
-            </div>  
-           
-           <div class="pay-now-btn" > <button >Pay Now</button></div>
-        </div>
-      </div>
+                      <div style="display: flex;
+                      flex-direction: row;
+                      justify-content: start;
+                      gap:30%;">
+                        <label for="country"   >Country:</label>
+                        <label for="zip-code" >Zip Code:</label>
+                      </div>
+
+                      <div  style="width: calc(100% - 50px);
+                      display: flex;
+                      flex-direction: row;
+                      padding: 8px 0;
+                      border-radius: 5px;"
+                      >
+                        <select id="country">
+                          <option value="" style="width: calc(100% - 100px);
+                          padding: 8px;
+                          border: none;
+                          border-radius: 5px;
+                          ;">Select Country</option>
+                          </select>
+
+                        <input type="text" style="width: calc(100% - 100px);
+                        padding: 8px;
+                        border: none;
+                        border-radius: 5px;
+                        ;" id="zip-code" placeholder="Enter zip code">
+                    </div>
+                  </div>
 
 
+                  <div class="checkout-right" style="width: 40%; padding: 2% 10%;">
+                    <h2 style="display: flex;
+                     justify-content: center; align-items: center;">Order Summary</h2>
+
+                       <div style="display: flexbox;
+                       height: 20%;
+                       ">
+                        <div>   <input type="text" placeholder="Coupon Code" style="
+                          width: calc(100% - 100px);
+                           padding: 8px;
+                           margin-bottom: 10px;
+                           border: 1px solid #ccc;
+                          border-radius: 5px;
+                                  ">
+                        </div>    
+                         <div
+                      style="display: flex;
+                     flex-direction: row;
+                     justify-content: center;  
+                     align-items: center;
+                     float: right;
+                     width: 40%;
+                     height: 50%;
+                     background-color: #2378FF;
+                     border-radius: 10%;
+                     ">
+                     <button class="apply-coupon-btn" style="background-color: #2378FF;
+                     color: white;
+                     border:none
+                     ">Apply Coupon</button>
+                         </div>
+                        </div>
+
+
+                    <div class="cart-summary">
+
+                      <div class="items"> 
+                        <div class="item1">Subtotal:</div>
+                        <div class="item2"><span>4,700</span></div>
+                      </div>
+
+                      <div class="items"> 
+                        <div class="item1">Taxes:</div>
+                        <div class="item2"><span >199</span></div>
+                       </div>
+                       <div class="items"> 
+                         <div class="item1">Discount:</div>
+                         <div class="item2"><span >0</span></div>
+                       </div>  
+
+                       <div class="items"> 
+                          <div class="item1">Total: </div>
+                          <div class="item2"><span >4,999</span></div>
+                        </div>  
+
+                       <div class="pay-now-btn" > <button >Pay Now</button></div>
+                    </div>
+                  </div>
+       </div>
     </section>
   </main>
 </body>
